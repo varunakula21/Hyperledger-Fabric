@@ -1,4 +1,4 @@
-# Hyperledger Fabric
+# Hyperledger Fabric Asset Management System
 
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/hyperledger/fabric/badge)](https://scorecard.dev/viewer/?uri=github.com/hyperledger/fabric)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/955/badge)](https://bestpractices.coreinfrastructure.org/projects/955)
@@ -16,6 +16,29 @@
 **Hyperledger Fabric** is a **Graduated** project under the Hyperledger umbrella, designed for distributed ledger solutions. Its modular architecture provides high levels of confidentiality, resiliency, flexibility, and scalability. Hyperledger Fabric allows for pluggable implementations of various components, accommodating the complexities of different economic ecosystems.
 
 This platform offers a uniquely elastic and extensible architecture, setting it apart from other blockchain solutions. Building on a fully-vetted, open-source framework, Hyperledger Fabric is an ideal starting point for enterprise blockchain initiatives.
+
+This repository contains the implementation of a blockchain-based asset management system using Hyperledger Fabric. This project was developed as part of an internship assignment, focused on creating, updating, and tracking assets for a financial institution while ensuring security, transparency, and immutability.
+
+## Key Features:
+Asset Management: Supports creation, updating, and querying of assets representing accounts with attributes such as DEALERID, MSISDN, MPIN, BALANCE, STATUS, TRANSAMOUNT, TRANSTYPE, and REMARKS.
+Transaction History: Retrieves complete transaction history for assets, allowing the institution to track and manage asset-related transactions.
+Blockchain Network Setup: Hyperledger Fabric test network was set up and used for developing and deploying the system.
+Smart Contract Development: A smart contract was created and deployed to manage the assets and their transactions.
+REST API Integration: A REST API was developed to invoke the smart contract, enabling easy interaction with the blockchain network.
+Docker Image: The REST API was containerized using Docker for simplified deployment and scalability.
+
+## Technology Stack:
+Blockchain Framework: Hyperledger Fabric
+Smart Contract Language: Golang
+REST API: Express (Node.js)
+Containerization: Docker
+
+## Setup Instructions:
+1.Setup Hyperledger Fabric test network.
+2.Deploy the smart contract.
+3.Use the REST API to invoke the smart contract.
+4.Monitor the blockchain network for transaction history and asset updates.
+
 
 ## Releases
 
